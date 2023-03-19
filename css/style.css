@@ -2,6 +2,46 @@
     background: rgba(16, 144, 216, 0.1);
 }
 
-.bg-input {
-    background: #F1F1F1 !important;
+/* Navbar background */
+.nav-bg-color {
+    background-color: rgba(16, 144, 216, 0.1);
+}
+
+.color-primary {
+    color: rgba(17, 17, 17, 0.8);
+}
+
+.color-secondary {
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.input-bg {
+    background-color: #F1F1F1;
+}
+
+.card-img {
+    /* width: 100%; */
+    height: 194px;
+}
+
+.custom-card-group-width {
+    width: 65%;
+}
+
+.custom-calculation-width {
+    width: 35%;
+}
+
+#background {
+    background-color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .custom-card-group-width {
+        width: 100%;
+    }
+
+    .custom-calculation-width {
+        width: 100%;
+    }
 }
