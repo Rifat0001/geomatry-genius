@@ -32,6 +32,7 @@ function changeStyle6() {
 
 // start the interactions part 
 // function to get the value of input field 
+// i reuse this function 4 times 
 function getInputValue(elementId) {
     const element = document.getElementById(elementId);
     const elementValue = parseFloat(element.value);
@@ -39,6 +40,7 @@ function getInputValue(elementId) {
 }
 
 //  function to get value from innerText
+// i reuse this function 8 times 
 function getTextValue(elementId) {
     const element = document.getElementById(elementId);
     elementValue = element.innerText;
@@ -46,6 +48,7 @@ function getTextValue(elementId) {
 }
 
 // function to display calculation on container
+// i reuse this function 6 times 
 function setTheValue(elementName, valueOfArea, elementId) {
     const resultContainer = document.getElementById('table-container');
     if (isNaN(valueOfArea) || valueOfArea <= 0) {
@@ -67,6 +70,7 @@ function setTheValue(elementName, valueOfArea, elementId) {
 }
 
 // function for disable button 
+// i reuse this function 6 times 
 function disableBtn(elementId) {
     document.getElementById(elementId).setAttribute('disabled', true);
 }
@@ -77,8 +81,8 @@ let serial = 0;
 document.getElementById('first-card').addEventListener('click', function () {
     const width = getInputValue('triangle-base');
     const height = getInputValue('triangle-height');
-    const triangleArea = 0.5 * width * height;
-    setTheValue('Triangle', triangleArea, 'first-card');
+    const area = 0.5 * width * height;
+    setTheValue('Triangle', area, 'first-card');
 
 })
 
@@ -97,24 +101,24 @@ document.getElementById('third-card').addEventListener('click', function () {
     const area = width * height;
     setTheValue('Parallelogram', area, 'third-card');
 })
-// it is for parallelogram
+// it is for Rhombus
 document.getElementById('fourth-card').addEventListener('click', function () {
     const width = getTextValue('rhombus-base');
     const height = getTextValue('rhombus-height');
     const area = width * height;
-    setTheValue('rhombus', area, 'fourth-card');
+    setTheValue('Rhombus', area, 'fourth-card');
 })
-// it is for parallelogram
+// it is for pentagon
 document.getElementById('fifth-card').addEventListener('click', function () {
     const width = getTextValue('pentagon-base');
     const height = getTextValue('pentagon-height');
     const area = 0.5 * width * height;
-    setTheValue('pentagon', area, 'fifth-card');
+    setTheValue('Pentagon', area, 'fifth-card');
 })
-// it is for parallelogram
+// it is for ellipse
 document.getElementById('sixth-card').addEventListener('click', function () {
     const width = getTextValue('ellipse-base');
     const height = getTextValue('ellipse-height');
     const area = (3.1416 * width * height).toFixed(2);
-    setTheValue('ellipse', area, 'sixth-card');
+    setTheValue('Ellipse', area, 'sixth-card');
 })
