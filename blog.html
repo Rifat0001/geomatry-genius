@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Title -->
+    <title>Interactive</title>
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar nav-bg-color rounded mt-4 px-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex flex-column justify-content-center align-items-start" href="index.html">
+                    <span class="fs-3 fw-bold color-primary">Interactive</span>
+                    <span class="fs-6 color-secondary">Geometry Genius</span>
+                </a>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-primary" type="submit"><a href="#"
+                            class="text-white text-decoration-none">Blog</a></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="px-md-5 my-5">
+            <h2>What is DOM & what is the purpose of DOM?</h2>
+            <p>The full-form of DOM is Document Object Model. It is a programming interface which gives
+                us the opportunity to make a webpage dynamic with Javascript. We can add events, remove or add
+                particular elements, or update any elements according to our choice. <br>
+                There are many use DOM. One of them is that it makes the website functional and can interact
+                with other elements easily. We can easily access different html element by DOM to Javascript</p>
+        </div>
+        <div class="px-md-5 my-5">
+            <h2>How to select element using DOM?</h2>
+            <p>There are many option to select element. Some of the most commons methods are given
+                below -</p>
+            <ul>
+                <li>getElementById</li>
+                <li>getElementsByClassName</li>
+                <li>getElementsByTagName</li>
+                <li>querySelectorAll</li>
+            </ul>
+        </div>
+        <div class="px-md-5 my-5">
+            <h2>What is Event Bubbling?</h2>
+            <p> Event bubbling is a advance concept in DOM. When an element (say h2, span, p etc.) gets
+                any events and those particular events propagated to their parent elements or ancestors until they
+                found the root elements is typically know as bubbling. We can stop event bubbling by using
+                stopPropagation() method.</p>
+        </div>
+        <div class="px-md-5 my-5">
+            <h2>What is callback function? Why it is used?</h2>
+            <p>If any function is passed to another function as an argument in such a way that it can be used in the
+                other function, we call it callback function. <br>
+                There are many reasons of using callback functions. A callback function can run after another function
+                has been executed. It can also call another function and by this we don't need to write same code again
+                , we can use it as per our need . Moreover, it can make the code more maintainable
+                and understandable for others.</p>
+        </div>
+    </main>
+
+
+    <!-- JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
